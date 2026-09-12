@@ -10,15 +10,18 @@ horas = total // 60
 minutos = total % 60
 print(f'{horas} horas {minutos} minutos')
 
+
 peso = int (input('Peso (Kg): '))
 estatura = float(input('Estatura (m): '))
 imc = peso / (estatura ** 2)
 print(f'IMC es: {imc:.2f}')
 
+
 num = float(input("Número: "))
 dec = int(input("Decimales: "))
 resultado = round(num, dec)
 print(resultado)
+
 
 PRECIO = 12
 cant = int(input("Cantidad: "))
