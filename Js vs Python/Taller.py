@@ -61,7 +61,7 @@ Perímetro = 2 * (5 + 3) = 16
 Y altura por separado, no hay bucles ni decisiones.
 Como pueden venir decimales (una base de .5 cm es valida),
 Usamos el float
-'''
+4.- Codigo'''
 import math
 radio = int(input('Ingrese el radio: '))
 area = math.pi * (radio ** 2)

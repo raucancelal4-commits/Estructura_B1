@@ -17,9 +17,7 @@ Resultado esperado: "La suma es: 17"
 3.- Descubrir patrónHay 1 entrada entera (int) y 1 salida. No se usan decisiones ni bucles. 
 El patrón principal es el uso de operadores aritméticos de división entera (//) y 
 módulo (%) para descomponer un número posicionalmente.
-4.- Código
-
-'''
+4.- Código'''
 numero = int(input('Ingrese 3 digitos: '))
 centena = numero // 100
 decena = (numero // 10) % 10
@@ -86,7 +84,25 @@ dec = int(input("Decimales: "))
 resultado = round(num, dec)
 print(resultado)
 
-
+'''Ejercicio 10: Tienda con descuentos por cantidad de productos
+1.- Entender el problema
+Entrada: Cantidad de productos a comprar (int). (El precio unitario es una constante fija de $12).
+Proceso:Si cant >= 10 -> descuento = 0.15 (15%)Si cant >= 5 (pero menor a 10) -> descuento = 0.05 (5%)
+Si no cumple ninguna -> descuento = 0 (0%)subtotal = PRECIO * cant -> Multiplica el precio base por las unidades.
+total = subtotal * (1 - descuento) -> Aplica la reducción del porcentaje al subtotal.
+Salida: Precio unitario, porcentaje de descuento aplicado y el total final a pagar.
+2.- Bosquejo a mano
+PRECIO = 12, cant = 8
+Paso 1 (Evaluar descuento): Como 8 es mayor o igual a 5, descuento = 0.05
+Paso 2 (Subtotal): 12 * 8 = 96
+Paso 3 (Total con descuento): 96 * (1 - 0.05) -> 96 * 0.95 = 91.20
+Resultado esperado: "Precio unitario: $12", "Descuento: 5%", "Total: $91.20"
+3.- Descubrir patrón
+Tiene 1 entrada y 3 salidas detalladas. Utiliza una constante en mayúsculas (PRECIO). 
+El patrón principal es una estructura de control de decisiones condicional múltiple 
+(if-elif-else) mutuamente excluyente para determinar dinámicamente el porcentaje de 
+descuento basándose en rangos numéricos.
+4.- Código'''
 PRECIO = 12
 cant = int(input("Cantidad: "))
 if cant >= 10:
